@@ -4,7 +4,11 @@ Uses SQLAlchemy to connect to a local PostgreSQL database.
 """
 
 import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
+
+# Load environment variables from .env file (if it exists)
+load_dotenv()
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 

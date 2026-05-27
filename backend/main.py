@@ -26,7 +26,7 @@ app = FastAPI(
 # Allow the React frontend (running on port 5173) to make requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["*"],  # Allow all origins for production (can be restricted later)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
