@@ -8,7 +8,7 @@ import axios from 'axios';
 
 // Create an Axios instance pointed at the FastAPI backend
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000',
+  baseURL: 'https://pinterest-1-5cxw.onrender.com',
 });
 
 // Request interceptor — attaches JWT token from localStorage

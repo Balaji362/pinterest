@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
 // Backend URL for images
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://pinterest-1-5cxw.onrender.com';
 
 export default function PostCard({ post, onClick }) {
   const { isAuthenticated, savedPostIds, savePostId, unsavePostId } = useAuth();

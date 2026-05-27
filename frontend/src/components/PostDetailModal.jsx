@@ -10,7 +10,7 @@ import { useAuth } from '../hooks/useAuth';
 import { updatePost, deletePost } from '../api/posts';
 
 // Backend URL for images
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://pinterest-1-5cxw.onrender.com';
 
 export default function PostDetailModal({ post, onClose, onPostUpdated, onPostDeleted }) {
   const { user, isAuthenticated, savedPostIds, savePostId, unsavePostId } = useAuth();
